@@ -37,7 +37,7 @@ const ProfilePage = () => {
               <img
                 src={selectedImg || authUser.profilePic || "/avatar.png"}
                 alt="Profile"
-                className="size-32 rounded-full object-cover border-4 "
+                className="size-32 rounded-full object-contain border-4 "
               />
               <label
                 htmlFor="avatar-upload"
@@ -54,7 +54,7 @@ const ProfilePage = () => {
                   type="file"
                   id="avatar-upload"
                   className="hidden"
-                  accept="image/*"
+                  accept="images/*"
                   onChange={handleImageUpload}
                   disabled={isUpdatingProfile}
                 />
